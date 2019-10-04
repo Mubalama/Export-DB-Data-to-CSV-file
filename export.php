@@ -3,7 +3,7 @@
  if(isset($_POST["export"]))  
  {  
       $connect = mysqli_connect("localhost", "root", "", "csv");  
-      // This the comment to test the git command if working. Now i can see it's working
+      // This the comment to test the git command if working.
       header('Content-Type: text/csv; charset=utf-8');  
       header('Content-Disposition: attachment; filename=data.csv');  
       $output = fopen("php://output", "w");  
